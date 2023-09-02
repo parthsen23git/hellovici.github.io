@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply some basic styling to the body */
+  body {
+    font-family: montserrat thin;
+    background-color: #031a2a;
+    color: #ededed;
+    padding: 20px;
+  }
+  
+  /* Style the main heading */
+  h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form */
+  form {
+    background-color: #042c346b;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white
+  }
+  
+  /* Style the label for the input field */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Style the input field */
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    background-color: #cea3eca5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the response section */
+  h2 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  #response {
+    background-color: #bda6eb5f;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .h { 
+    color: #C38eb4;
+    font-family: Montserrat Thin  ;
+    font-size:  45px; 
+    text-align: center;
+    margin: auto;
+    
+
+}
+.center
+{
+    border :0px solid rgb(255, 255, 255);
+    margin:auto;
+    width: 30%;
+    height: 200px;
+    padding:10px;
+}
+.tag{
+    color: #dec4d6;
+    font-family: montserrat light  ;
+    font-size:  15px; 
+    text-align: center;
+    margin-left: 23%;
+    margin-right: 10%;
+
+}
+.logo
+{
+    display: block;
+    width: 40px;
+    margin-left: 145px;
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 0%;
+
+
+}

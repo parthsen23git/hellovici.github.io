@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#000e12;
+}
+.h { 
+    color: #C38eb4;
+    font-family: Montserrat Thin  ;
+    font-size:  45px; 
+    text-align: center;
+    margin: auto;
+    
+
+}
+.center
+{
+    border :1px solid rgb(255, 255, 255);
+    margin:auto;
+    width: 30%;
+    height: 200px;
+    padding:10px;
+}
+.tag{
+    color: #dec4d6;
+    font-family: montserrat light  ;
+    font-size:  15px; 
+    text-align: center;
+    margin-left: 23%;
+    margin-right: 10%;
+
+}
+.logo
+{
+    display: block;
+    width: 80px;
+    margin-left: 147px;
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 0%;
+
+
+}
+.chat-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #26425A;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VICI</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reelstyles.css') }}">
+
+<script>
+    $(document).ready(function() {
+        $('form').submit(function(event) {
+            event.preventDefault();
+            var formData = $(this).serialize();
+            $.ajax({
+                type: 'POST',
+                url: '/get_response',
+                data: formData,
+                success: function(data) {
+                    $('#response').text(data.response);
+                }
+            });
+        });
+    });
+</script>
+</head>
+<body>
+    <div class="center"><img class="logo" src="{{ url_for('static', filename='static\logo.png') }}"alt="LOGO" >
+    <h1 class="h">VICI</h1>
+    <p1 class="tag">Vit Intelligent Chat Interface</p1></div>
+    <form action="/get_response" method="post">
+        <label for="query">Ask  your  question :</label><br>
+        <textarea id="query" name="query" rows="5" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Response:</h2>
+    <p id="response"><br><br><br></p>
+</body>
+</html>

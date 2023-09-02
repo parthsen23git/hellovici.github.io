@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>vici</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='reelstyles.css') }}">
+</head>
+<body>
+    <div class="center"><img class="logo" src="C:\Users\senpa\hello\templates\ASSETS\whit_00229.png"alt="LOGO" >
+    <h1 class="h">VICI</h1>
+    <p1 class="tag"> Vit Intelligent Chat Interface</p1>
+    </div>
+    <form id="chat-form">
+        <input type="text" id="query" placeholder="Enter your query">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="response"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#chat-form').submit(function (e) {
+            e.preventDefault();
+            var query = $('#query').val();
+            $.post('/get_response', { query: query }, function (data) {
+                $('#response').html('<p>' + data + '</p>');
+            });
+        });
+    </script>
+</body>
+</html>
